@@ -1,6 +1,6 @@
 // script.js
 $(function () {
-    $('.notification-bar').delay(3000).slideDown().delay(5000).slideUp();
+    $('.notification-bar').delay(1000).slideDown().delay(5000).slideUp();
     // TO DO LIST
     $('#todoList ul').sortable({
         items: "li:not('.listTitle, .addItem')",
