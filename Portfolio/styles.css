@@ -1,0 +1,115 @@
+html,
+body,
+.cover {
+    height: 100%;
+}
+
+
+.cover {
+    background: url('images/desk_photo.png') top left no-repeat;
+    background-size: cover;
+    display: table;
+    width: 100%;
+    padding: 0 20%;
+    box-shadow: 0 0 100px #000;
+}
+
+#user,
+#portfolio,
+#contact {
+    width: 100%;
+    padding: 0 5%;
+}
+
+.cover-text {
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cover-text h1 {
+    margin: 0;
+    font-size: 70px;
+    letter-spacing: -3px;
+}
+#langs img {
+    height: 100px;
+    width: 75px;
+}
+
+nav .navbar-inverse {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+section {
+    padding: 0px;
+}
+
+#user img {
+    height: 300px;
+    width: 200px;
+}
+#profile {
+    text-align: center;
+}
+.ports img {
+    height: 240px;
+    width: 360px;
+    margin-bottom: 10px;
+    border: solid 1px grey;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin 0 0 60px;
+}
+.message {
+    border-right: solid 2px black;
+}
+#contact p {
+    text-align: center;
+    font-weight: bold;
+}
+#portfolio {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+.icons {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .icons strong {
+        text-align: center;
+    }
+@media only screen and ( max-width : 568px ) {
+    #langs {
+        display: none;
+    }
+    .ports {
+        padding: 5px;
+    }
+    .cover h1 {
+        font-size: 40px;
+    }
+    .message { 
+    border-right: none;
+    }
+    #user h3 {
+        text-align: center;
+    }
+    .icons {
+        text-align: center;
+        padding: 5px;
+    }
+    .icons strong {
+        display: none;
+    }
+}
