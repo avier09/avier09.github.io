@@ -1,7 +1,13 @@
 // script.js
+$(document).ready(function () {
+
+    $('#construction').modal('show');
+
+});
+$(function(){
+
 
 //notification bar
-$(function () {
     $('.notification-bar').delay(3000).slideDown().delay(5000).slideUp();
     // TO DO LIST
     $('#todoList ul').sortable({
@@ -10,6 +16,7 @@ $(function () {
         dropOnEmpty: true,
         placeholder: "emptySpace"
     });
+
     
     //top doesn't scroll
     $(window).scroll(function () {
@@ -19,50 +26,34 @@ $(function () {
         if (scroll >= 100) sticky.addClass('fixed');
         else sticky.removeClass('fixed');
     });
-    
-    // mouse over icons
-    
-        //Home Icon
-    $('#home img').mouseover(function () {
-      $(this).attr("src", "../images/icons/home_blue.png")
-  });
-    $('#home img').mouseout(function () {
-      $(this).attr("src", "../images/icons/home_logo.png")
-  });
-    
-       //email Icon
-    $('#email img').mouseover(function () {
-      $(this).attr("src", "../images/icons/email_blue.png")
-  });
-    $('#email img').mouseout(function () {
-      $(this).attr("src", "../images/icons/email_logo.png")
-  });
-    
-       //portfolio Icon
-    $('#portfolio img').mouseover(function () {
-      $(this).attr("src", "../images/icons/portfolio_blue.png")
-  });
-    $('#portfolio img').mouseout(function () {
-      $(this).attr("src", "../images/icons/portfolio_icon.png")
-  });
-    
-       //user Icon
-    $('#user img').mouseover(function () {
-      $(this).attr("src", "../images/icons/user_blue.png")
-  });
-    $('#user img').mouseout(function () {
-      $(this).attr("src", "../images/icons/user_icon.png")
-  });
-    
-       //download Icon
-    $('#download img').mouseover(function () {
-      $(this).attr("src", "../images/icons/download_blue.png")
-  });
-    $('#download img').mouseout(function () {
-      $(this).attr("src", "../images/icons/download_icon.png")
-  });
+
+
+
+    //Hides the Tech Icons until scroll
+    $(window).scroll(function () {
+        $('.hideme').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var wait = 0;
+            if (bottom_of_window > bottom_of_object) {
+                $('.hideme:lt(9)').each(function () {
+                    $(this).delay(wait).animate({
+                        'opacity': '1'
+                    }, 500);
+                    wait += 250;
+                });
+
+            }
+            
+        });
+        
+    });
     
     
+
+    
+
+
     var img = document.getElementById('.pic').firstChild;
     img.onload = function () {
         if (img.height > img.width) {

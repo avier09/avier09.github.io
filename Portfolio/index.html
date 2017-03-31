@@ -2,39 +2,49 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Damyon Jackson's Portfolio">
-    <meta name="keywords" content="HTML,CSS,JavaScript, Web Development, Web Developer, Damyon, Houston">
-    <meta name="author" content="Damyon Jackson">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Damyon Jackson's Portfolio</title>
-         <link rel="stylesheet" href="css/normalize.css">
-         <link rel="stylesheet" href="css/style.css">
+    
+  <meta charset="UTF-8">
+  <meta name="description" content="Damyon Jackson's Portfolio">
+  <meta name="keywords" content="HTML,CSS,JavaScript, Web Development, Web Developer, Damyon, Houston">
+  <meta name="author" content="Damyon Jackson">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Damyon Jackson's Portfolio</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="notification-bar">Hello! Welcome to Jackson-dev.com. This site is currently under construction.</div>
+    <div class="notification-bar">Hello! Welcome to Jackson-dev.com.</div>
     <div class="container">
         <header class="sticky">
             <div class="name">
                 <h4>Damyon Jackson</h4>
             </div>
             <div class="boxes" id="menu">
-                <div class="floating-box"><img src="images/icons/home_logo.png" alt=""></div>
-                <div class="floating-box"><a href="mailto:damyonjackson@gmail.com?subject=Feedback for 
-                    jackson-dev.com&body=This is what I thought of your site."><img src="images/icons/email_logo.png" alt="Email"></a></div>
-                <div class="floating-box"><img src="images/icons/portfolio_icon.png" alt=""></div>
-                <div class="floating-box"><img src="images/icons/user_icon.png" alt=""></div>
-                <div class="floating-box"><img src="images/icons/download_icon.png" alt=""></div>
+                <!--Home Icon-->
+                <div class="floating-box" id="home"><a href="index.html"><img src="images/icons/home_logo.png" alt=""></a></div>
+                <!--Email Icon-->
+                <div class="floating-box" id="email">
+                    <a href="mailto:damyonjackson@gmail.com?subject=Feedback for Jackson-dev.com
+                    &body=This is what I thought of your site."><img src="images/icons/email_logo.png" alt="Email"></a>
+                </div>
+                <!--Portfolio Icon-->
+                <div class="floating-box" id="portfolio"><img src="images/icons/portfolio_icon.png" alt=""></div>
+                <!--User Icon-->
+                <div class="floating-box" id="user"><img src="images/icons/user_icon.png" alt=""></div>
+                <!--Download Icon-->
+                <div class="floating-box" id="download"><img src="images/icons/download_icon.png" alt=""></div>
             </div>
         </header>
         <br>
         <br>
         <div class="titleImage"><img src="images/damyon.png" alt="" class="pic"></div>
         <div class="welcome">
-            
+
             <h1>Damyon Jackson</h1>
-            <p>Junior Web Developer <br> from Houston, Tx.</p>
+            <p>Junior Web Developer
+                <br> from Houston, Tx.</p>
             <ul class="social">
                 <!--email-->
                 <li>
@@ -101,7 +111,7 @@
             </div>
         </div>
     </div>
-    <footer>&copy; Damyon Jackson - damyonjackson@gmail.com</footer>
+    <footer>&copy; Damyon Jackson - <a href="mailto:damyonjackson.com">damyonjackson@gmail.com</a></footer>
     <!-- Load the CDN first -->
     <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 

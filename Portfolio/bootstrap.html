@@ -44,7 +44,7 @@ Thank you for checking out my page.-->
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right" role="tablist">
-                    <li class="active"><a href="bootstrap.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="#user">About Me</a></li>
                     <li><a href="#portfolio"> My Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -52,18 +52,37 @@ Thank you for checking out my page.-->
             </div>
         </div>
     </nav>
+    
+    <!--Page is under construction-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="construction">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Ahhh!&nbsp; &nbsp;<span class="glyphicon glyphicon-alert"></span></h4>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Page is currently under construction. Some functions and options might not be available right now. I can't wait for you to check out my site, so please come back later.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
     <!--Cover Space-->
     <div class="cover">
         <div class="cover-text">
             <h1>Welcome to Jackson-dev.com</h1>
             <p>My name is Damyon Jackson. I'm a Web Developer from Houston, Tx.</p>
-            <br>
-            <a href="#user" role="button" class="btn btn-lrg btn-default">Check Me Out!</a>
+            <br><br>
+            <a href="#user" role="button" class="glyphicon glyphicon-chevron-down" id="blink"></a>
         </div>
     </div>
     <!--About Me-->
     <section id="user">
         <div class="container">
+            <br><br>
             <h2>About Me</h2>
             <div class="row">
                 <div class="col-sm-3" id="profile">
@@ -94,24 +113,24 @@ Thank you for checking out my page.-->
                 <div class="col-sm-12">
                     <h4>Technology Used</h4>
                 </div>
-                <div class="container">
+                
                     <ul class="list-inline row">
                         <li class="col-sm-4">
                             <div class="col-sm-4">
                                 <!--HTML-->
-                                <div id="html_logo">
+                                <div id="html_logo" class="hideme">
                                     <img src="images/logos/html_logo.png" alt="HTML5">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!--CSS-->
-                                <div id="css_logo>">
+                                <div id="css_logo" class="hideme">
                                     <img src="images/logos/css_logo.png" alt="CSS">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!--JS-->
-                                <div id="js_logo>">
+                                <div id="js_logo" class="hideme">
                                     <img src="images/logos/js_logo.png" alt="JavaScript">
                                 </div>
                             </div>
@@ -119,19 +138,19 @@ Thank you for checking out my page.-->
                         <li class="col-sm-4">
                             <div class="col-sm-4">
                                 <!--Bootstrap-->
-                                <div id="bs_logo>">
+                                <div id="bs_logo" class="hideme">
                                     <img src="images/logos/bootstrap_logo.png" alt="BootStrap">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!--jQuery-->
-                                <div id="jq_logo>">
+                                <div id="jq_logo" class="hideme">
                                     <img src="http://placehold.it/75x100" alt="jQuery">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!--PHP-->
-                                <div id="php_logo>">
+                                <div id="php_logo" class="hideme">
                                     <img src="http://placehold.it/75x100" alt="PHP">
                                 </div>
                             </div>
@@ -139,25 +158,25 @@ Thank you for checking out my page.-->
                         <li class="col-sm-4">
                             <div class="col-sm-4">
                                 <!--mySQL-->
-                                <div id="sql_logo>">
+                                <div id="sql_logo" class="hideme">
                                     <img src="http://placehold.it/75x100" alt="mySQL">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!--AngularJS-->
-                                <div id="ajs_logo>">
+                                <div id="ajs_logo" class="hideme">
                                     <img src="images/logos/angularjs_logo.png" alt="AngularJS">
                                 </div>
                             </div>
                             <div class="col-sm-4">
                                 <!--WordPress-->
-                                <div id="wp_logo>">
+                                <div id="wp_logo" class="hideme">
                                     <img src="http://placehold.it/75x100" alt="WordPress">
                                 </div>
                             </div>
                         </li>
                     </ul>
-                </div>
+               
             </div>
             <br>
             <div class="row ports">
