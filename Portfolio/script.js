@@ -6,8 +6,8 @@ hiring, I would love to hear from you.
 Please email me at damyonjackson@gmail.com
 Thank you for checking out my page.-*/
 
-$function() {
+$(function() {
     $("#proj1").hover(function() {
         $('#html_logo').fadeOut();    
     });
-}
+});
