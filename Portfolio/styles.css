@@ -92,7 +92,6 @@ section {
         opacity: 1;
     }
 }
-
 @-webkit-keyframes blink {
     0% {
         opacity: 1;
@@ -126,7 +125,7 @@ section {
         opacity: 1;
     }
 }
-
+/* end blinking */
 
 h2 {
     text-align: center;
