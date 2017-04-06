@@ -4,7 +4,6 @@ body,
     height: 100%;
 }
 
-
 .cover {
     background: url('images/desk_photo.png') top left no-repeat;
     background-size: cover;
@@ -33,6 +32,7 @@ body,
     font-size: 70px;
     letter-spacing: -3px;
 }
+
 #langs img {
     height: 100px;
     width: 75px;
@@ -51,18 +51,22 @@ section {
     height: 300px;
     width: 200px;
 }
+
 #profile {
     text-align: center;
 }
+
 .ports img {
     height: 240px;
     width: 360px;
     margin-bottom: 10px;
     border: solid 1px grey;
 }
+
 .hideme {
     opacity: 0;
 }
+
 .glyphicon-chevron-down {
     font-size: 75px;
     color: white;
@@ -77,11 +81,15 @@ section {
     -o-animation: blink 1s;
     -o-animation-iteration-count: infinite;
 }
-#blinking_image:hover{
+
+#blinking_image:hover {
     text-decoration: none;
 }
+
+
 /* keyframes blinking */
-@keyframes blink  {
+
+@keyframes blink {
     0% {
         opacity: 1;
     }
@@ -92,6 +100,7 @@ section {
         opacity: 1;
     }
 }
+
 @-webkit-keyframes blink {
     0% {
         opacity: 1;
@@ -103,6 +112,7 @@ section {
         opacity: 1;
     }
 }
+
 @-moz-keyframes blink {
     0% {
         opacity: 1;
@@ -114,6 +124,7 @@ section {
         opacity: 1;
     }
 }
+
 @-o-keyframes blink {
     0% {
         opacity: 1;
@@ -125,6 +136,8 @@ section {
         opacity: 1;
     }
 }
+
+
 /* end blinking */
 
 h2 {
@@ -138,10 +151,12 @@ h2 {
 .message {
     border-right: solid 2px black;
 }
+
 #contact p {
     text-align: center;
     font-weight: bold;
 }
+
 #portfolio {
     text-align: center;
 }
@@ -149,25 +164,32 @@ h2 {
 footer {
     text-align: center;
 }
+
 .icons {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .icons strong {
-        text-align: center;
-    }
-@media only screen and ( max-width : 568px ) {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.icons strong {
+    text-align: center;
+}
+
+@media only screen and ( max-width: 568px) {
     #langs {
         display: none;
     }
     .ports {
         padding: 5px;
     }
+    .ports img {
+        height: 180px;
+        width: 270px;
+    }
     .cover h1 {
         font-size: 40px;
     }
-    .message { 
-    border-right: none;
+    .message {
+        border-right: none;
     }
     #user h3 {
         text-align: center;
@@ -179,7 +201,7 @@ footer {
     .icons strong {
         display: none;
     }
-    .glyphicon-chevron-down{
+    .glyphicon-chevron-down {
         font-size: 20px;
     }
 }
